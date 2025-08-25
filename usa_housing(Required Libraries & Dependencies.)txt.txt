@@ -1,0 +1,43 @@
+Python version 3.12.7
+
+Libraries Used
+
+pandas: This is a powerful library for data manipulation and analysis.
+numpy: A fundamental library for numerical computing in Python.
+matplotlib.pyplot: A plotting library used for creating static, interactive, and animated visualizations.
+seaborn: A data visualization library based on matplotlib, providing a high-level interface for drawing attractive statistical graphics.
+sklearn (scikit-learn): A widely used library for machine learning in Python.
+joblib: A set of tools to provide lightweight pipelining in Python, used here for saving and loading the model.   joblib 1.4.2 
+scipy: A library for scientific and technical computing.
+
+Scikit-learn version: 1.5.1
+Numpy version: 1.26.4
+
+Functions and Methods Used
+Here's a breakdown of the main functions and methods from each library that you used to complete the analysis:
+
+Data Loading and Exploration (pandas, matplotlib, seaborn)
+
+pd.read_csv(): To load the USA_Housing.csv dataset.
+df.info(): To get a concise summary of the DataFrame, including data types and non-null values.
+df.describe(): To generate descriptive statistics of the DataFrame.
+df.isnull().sum(): To check for and count any missing values in the dataset.
+sns.displot(): To visualize the distribution of the difference between the ctual and predicted values.
+Data Preprocessing and Splitting (sklearn)
+df.drop(): To create the feature set (X) by dropping the target variable (Price).
+train_test_split(): To divide the data into training and testing sets.
+Model Building (sklearn.linear_model)
+LinearRegression(): To initialize the machine learning model.
+lr.fit(): To train the model on the training data.
+lr.predict(): To make predictions on the test data.
+Model Evaluation (numpy)
+np.sqrt(): To calculate the square root for the Root Mean Square Error (RMSE).
+lr.coef_: To get the coefficients (slopes) of the linear regression model for each feature.
+lr.intercept_: To get the y-intercept of the model.
+Model Saving and Loading (joblib)
+joblib.dump(): To save the trained linear regression model to a file (.pkl).
+joblib.load(): To load the saved model for making new predictions.
+
+Custom Functions (OOPs_deep_stats)
+
+Your custom OOPs_deep_stats file defines a DataStats_Deep class with a number of methods to perform detailed statistical analysis and visualizations, including total(), average(), median(), var(), std_var(), skew(), kurt(), and visualize(). The everything() method was called on each column to get a comprehensive statistical summary.
